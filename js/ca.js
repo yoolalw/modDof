@@ -16,13 +16,14 @@ button.addEventListener("click", (e) => {
         console.log("c")
         msg.textContent = ""
 
-        const item = [{ 
+        const item = [ {
             atv: JSON.stringify(input),
-            status: "todo"
-        }]
+            status: "todo" }
+        ]
         const ativ = JSON.parse(localStorage.getItem('ativ')) || []
         ativ.push(item.atv, item.status)
         localStorage.setItem('ativ', JSON.stringify(item))
+        
     }
 })
 
