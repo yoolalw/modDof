@@ -8,7 +8,7 @@ button.addEventListener("click", (e) => {
 
     const input = document.getElementById("input").value
 
-    if (input.value == "") {
+    if (document.getElementById('input').value === "") {
         console.log("b")
         msg.textContent = "O campo precisa estar preenchido."
         
