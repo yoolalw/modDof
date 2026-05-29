@@ -14,7 +14,7 @@ arr.forEach((item) => {
     console.log(item)
 
     todo.innerHTML += `
-        "<div id="div" class="bg-[#EDEDED] text-center justify-center mt-2 h-40 w-full rounded-lg w-20 shadow-xl">"
+        <div id="div" class="bg-[#EDEDED] text-center justify-center mt-2 h-40 w-full rounded-lg w-20 shadow-xl">
             <h1 class="text-[50px] font-bold text-[#333]">${item.atv}</h1>
             <div class="flex justify-center gap-20 mt-7">
                 <button id="voltar" class="h-10 w-20 font-bold text-gray-700 bg-blue-300 shadow-lg cursor-pointer rounded-lg hover:bg-blue-200">Voltar</button>
@@ -27,9 +27,8 @@ arr.forEach((item) => {
     avancar.addEventListener('click', (e) => {
         e.preventDefault()
 
-        todo.innerHTML += `
-            "<div id="div" class="bg-[#EDEDED] text-center justify-center mt-2 h-40 w-full rounded-lg w-20 shadow-xl"></
-        `
+        
+        
 
     })
 
